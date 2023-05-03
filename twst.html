@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Bakery World
+        </title>
+        <link rel="icon" type="image/n.jpg" href="n.jpg">
+        <style>
+            *
+            { 
+                text-align: center;
+                margin: 0;
+                border-radius: 10px;
+
+            }
+            a 
+            { padding: 20px;
+                color: white;
+
+            }
+            nav
+            ,footer
+            {
+                color: white;
+                background-color: darkolivegreen;
+                padding: 20px;
+
+            }
+            img{ width: 100%;}
+            main,section
+            {   width: 60%;
+                margin:auto ;
+                border:1px solid darkolivegreen ;
+
+            }
+            h2,h3
+            {
+                padding: 7px; ;
+                color: white;
+                background-color: darkolivegreen;
+
+            }
+            h3 
+            {
+               width: 30%;
+               margin: auto;
+            }
+            form 
+            {
+             margin: auto;
+             width: 60%;
+           }
+
+
+
+
+        </style>
+
+    </head>
+
+    <body style="background-color: lightyellow;">
+        <header>
+           <nav>
+            <a href="#aboutq" > ABOUT</a>
+            <a href="#menu"> MENUE</a>
+            <a href="#table"> RESERVE TABLE</a>
+           </nav>
+           <br>
+           <img src="1.jpg">
+            
+        </header>
+        <br>
+        <br>
+        <br>
+        <main id="aboutq">
+            <h2>About The Bakery</h2>
+            <br>
+            <br>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti consequatur voluptate quia quae illo omnis iste expedita debitis possimus quam error fugit harum officia, optio ex consequuntur ullam iure distinctio?
+            </p>
+
+            <br>
+            <img src="2.jpg">
+            <p>
+                Opening hours : 
+        
+                Open from 6am to 5pm
+              </p>
+        
+        
+        
+              <address>
+                <strong>Address : </strong> 
+                15 Adr street, 5015
+              </address>
+
+
+        </main>
+        <br>
+        <br>
+        <br>
+        <section id="menu">
+
+            <h2>The menu</h2>
+            <br />
+            <h3>Eat</h3>
+            <br />
+            <h4>breakfast</h4>
+            <p>
+                Assortment of fresh baked fruit breads and muffins <time>7.00am</time>
+            </p>
+            <br>
+            <img src="3.jpg">
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <h3>Drink</h3>
+            <br />
+            <h4>Bread Basket</h4>
+
+            <p>
+             Assortment of fresh baked fruit breads and muffins <time>5.50</time>
+            </p>
+            <br />
+
+           <img src="4.jpg" alt="" />
+        </section>
+        <br>
+        <br>
+        <br>
+        <form id="table">
+            <h2>Reserve a table</h2>
+      
+            <fieldset>
+              <br />
+      
+              <label >what is your Name ? </label>
+              <input  type="text" required />
+      
+      
+              <br />
+              <br />
+      
+      
+              <label >How many people ? &#128293; </label>
+              <input  type="number" required />
+              <br />
+              <br />
+      
+              <label > Date and time ? </label>
+              <input  type="datetime-local" required />
+      
+              <br />
+              <br />
+              <label >Leave your message &#128525; </label>
+              <input  type="text" />
+      
+              <br />
+              <br />
+      
+              <input type="submit" value="ارسال">
+      
+              <button type="submit">send</button>
+            </fieldset>
+          </form>
+          <br>
+          <br>
+
+
+
+
+
+
+
+
+
+        <footer>Designed and developed by Nada Atia © 2023</footer>
+        <script>
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+
+        </script>
+            
+        
+        
+
+
+
+
+
+
+        
+    </body>
+
+
+
+
+
+
+</html>
